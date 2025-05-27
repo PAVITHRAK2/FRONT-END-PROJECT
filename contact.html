@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sweet Bliss - Contact Us for Any Questions, Feedback, or Special Requests">
+    <title>Contact Us - Sweet Bliss </title>
+    <link rel="stylesheet" href="css/styles.css">
+   	<!-- Here I am using Font Awesome for the menu (hamburger) icon for better aesthetics -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enhance the website with a favicon -->
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Enhance the app even more with a manifest file to make it a PWA -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Theme color for the app -->
+    <meta name="theme-color" content="#cc2b5e">
+  </head>
+
+  <body>
+    <header>
+			<!-- Desktop Navigation Bar - using 2 separate nav elements for desktop and mobile -->
+      <nav class="navbar">
+        <h1 class="site-title">Sweet Bliss</h1>
+        <ul class="desktop-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Offerings</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon"><i class="fas fa-bars"></i></div>
+      </nav>
+
+			<!-- Mobile Navigation Bar - using 2 separate nav elements for desktop and mobile -->
+      <ul class="mobile-nav-links" id="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Offerings</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </header>
+
+		<!-- Welcome Banner Section -->
+		<section class="welcome-banner">
+			<h2>Contact Sweet Bliss </h2>
+			<p>Get in Touch with Us for Any Questions or Special Requests or even Collaborations!</p>
+		</section>
+    
+    <!-- Image Section 1 - Eager Loading for faster loading -->
+    <!-- Images are all from Adobe Stock and Shutterstock for the sake of the project - They are all licensed for reuse -->
+		<img src="img/intro-image.jpg" alt="Welcome Image" class="intro-img" loading="eager">
+
+    <main class="contact-main">
+      <!-- Information Text Section -->
+      <section class="contact-info">
+        <h2>Reach Out to Sweet Bliss</h2>
+        <p>We’re here to provide you with the best coffee and desserts experience, whether you're looking for a cozy place to enjoy your favorite brew or need more information about our offerings.</p>
+        <p>Feel free to reach out to us for any questions, feedback, or special requests. At Brewed Bliss, we value our customers' input and look forward to hearing from you!</p>
+        <p>Stop by for a fresh cup of coffee, meet our baristas, or just relax in our warm, inviting space. Your comfort and satisfaction are our top priorities.</p>
+				<p>Additionally, we are open to collaborations and partnerships. If you have an idea or proposal, we'd love to hear from you!</p>
+				<hr>
+				<p>Phone: +91-123456789</p>
+				<p>Email: <a href="mailto:sweetbliss.com">sweetbliss.com</a></p>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <!-- Here I am going above and beyond by enhancing the form with Formspree for better functionality -->
+        <form action="https://formspree.io/f/meoqkdrk" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <hr>
+          <div class="button-container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+		<!-- Location and Hours Section -->
+		<div class="location-hours-container">
+			<section class="location-hours">
+				<h2>Visit Us</h2>
+				<div class="location-hours-content">
+					<div class="hours">
+						<h3>Our Hours</h3>
+						<p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+						<p>Saturday: 8:00 AM - 8:00 PM</p>
+					</div>
+
+					<div class="address-contact">
+						<h3>Our Location</h3>
+						<p>church Street</p>
+						<p>Bangalore, India</p>
+						<p>560011</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+    <footer>
+      <p>&copy; 2025 - Sweet Bliss Shop</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
